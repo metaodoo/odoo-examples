@@ -15,7 +15,7 @@ docker run -d -e POSTGRES_USER=odoo -e POSTGRES_PASSWORD=odoo -e POSTGRES_DB=pos
 
 **Run Odoo**
 ```sh
-docker run -p 8069:8069 --name odoo --link db:db --read-only --tmpfs=/tmp -v /Users/whyxn/docker-vol/odoo/addon:/mnt/extra-addons -v /Users/whyxn/docker-vol/odoo/data:/var/lib/odoo whyxn/odoo:14.0
+docker run -p 8069:8069 --name odoo --link db:db --read-only --tmpfs=/tmp -v /vol/odoo/data:/var/lib/odoo klovercloud/odoo:14.0
 ```
 
 ####
