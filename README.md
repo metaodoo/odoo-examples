@@ -32,7 +32,6 @@ docker run -p 8069:8069 --name odoo --link db:db --read-only --tmpfs=/tmp -v /vo
 - The following paths should be in the Volume Mount paths
 ```
 /var/lib/odoo
-/mnt/extra-addons
 ```
 - Create Application
 - Set Environment Variables / Secrets to provide configurations for PostgreSQL
