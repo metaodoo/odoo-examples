@@ -10,5 +10,6 @@ RUN sed -i 's/\r$//' /kc-init.sh
 
 # copy addons to addons folder
 COPY addons/. /mnt/extra-addons/.
+COPY custom-addons/. /mnt/custom-addons/.
 
 USER odoo
