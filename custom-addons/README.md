@@ -1,1 +1,1 @@
-**Keep your addons in this folder**
+**Keep your custom addons in this folder**

@@ -1,7 +1,9 @@
 FROM klovercloud/odoo-base-image:14.0
 
-RUN apt-get -y update
-RUN apt-get -y install wkhtmltopdf xvfb xauth xfonts-base xfonts-75dpi fontconfig
+RUN apt-get -y update && apt-get -y install vim git procps wkhtmltopdf xvfb xauth xfonts-base xfonts-75dpi fontconfig
+
+RUN usermod -u 1000 odoo
+RUN id -u odoo
 
 # replace existing config with your custom config
 COPY odoo.conf /etc/odoo/odoo.conf
