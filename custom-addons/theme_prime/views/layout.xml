@@ -1128,11 +1128,11 @@
                         </ul>
                         <div class="tab-content">
                             <!-- Description -->
-                            <div groups="base.group_public,base.group_portal" t-if="product.website_description" class="tab-pane fade show active" id="tp-product-description-tab" role="tabpanel">
+                            <div groups="base.group_public,base.group_portal" t-if="product.description_sale" class="tab-pane fade show active" id="tp-product-description-tab" role="tabpanel">
                                 <div class="container-fluid">
                                     <div class="row m-0 py-2">
                                         <div class="col-12">
-                                            <div itemprop="description" t-field="product.website_description" class="oe_structure" id="product_full_description" />
+                                            <div itemprop="description" t-field="product.description_sale" class="oe_structure" id="product_full_description" />
                                         </div>
                                     </div>
                                 </div>
@@ -1141,7 +1141,7 @@
                                 <div class="container-fluid">
                                     <div class="row m-0 py-2">
                                         <div class="col-12">
-                                            <div itemprop="description" t-field="product.website_description" class="oe_structure" id="product_full_description" />
+                                            <div itemprop="description" t-field="product.description_sale" class="oe_structure" id="product_full_description" />
                                         </div>
                                     </div>
                                 </div>
