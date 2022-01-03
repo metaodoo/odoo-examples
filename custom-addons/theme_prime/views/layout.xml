@@ -935,7 +935,7 @@
                 <t t-set="rating_stats" t-value="product.sudo().rating_get_stats()"/>
                 <div class="tp-product-rating" t-raw="request.website._get_theme_prime_rating_template(rating_stats['avg'], rating_stats['total'])"/>
             </t>
-            <p t-field="product.description_sale" class="text-muted mt-3" placeholder="A short description that will also appear on documents." />
+            <!-- <p t-field="product.description_sale" class="text-muted mt-3" placeholder="A short description that will also appear on documents." /> -->
         </xpath>
 
         <xpath expr="//div[@id='product_details']//t[@t-call='website_sale.product_price']" position="replace"/>
