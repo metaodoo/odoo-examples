@@ -1083,7 +1083,7 @@
                 <div class="row no-gutters">
                     <div class="col-12 tp-product-details-tab">
                         <ul class="nav nav-tabs justify-content-center" role="tablist">
-                            <li groups="base.group_public,base.group_portal" t-if="product.website_description" class="nav-item">
+                            <li groups="base.group_public,base.group_portal" t-if="product.description_sale" class="nav-item">
                                 <a class="nav-link active" data-toggle="tab" href="#tp-product-description-tab" role="tab" aria-selected="true">
                                     <div class="my-1 tp-tab-title o_not_editable">
                                         <span class="fa fa-file-text-o mr-1"/>
