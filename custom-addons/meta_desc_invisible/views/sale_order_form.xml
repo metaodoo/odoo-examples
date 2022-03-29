@@ -1,0 +1,21 @@
+<odoo>
+  <data>    
+    <!-- Setting invisible attribute to 1 in sale order -->
+    <record id="view_order_form_line_desc_invisible" model="ir.ui.view">
+        <field name="name">view.order.form.line.desc.invisible</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='order_line']/form//field[@name='name']" >
+              <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//field[@name='order_line']/tree//field[@name='name']" >
+              <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//field[@name='order_line']/kanban//field[@name='name']" >
+              <attribute name="invisible">1</attribute>
+            </xpath>
+        </field>
+    </record>    
+  </data>
+</odoo>
