@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template id="invoice_reports_changes" inherit_id="account.report_invoice_document">
+        <xpath expr="//table[@name='invoice_line_table']//th[@name='th_description']/span[1]" position="replace">
+            <span>Product Name</span>
+        </xpath>
+
+        <xpath expr="//tbody/t[3]/tr/t/td[1]/span" position="replace">
+            <span t-field="line.product_id.name" t-options="{'widget': 'text'}"/>
+        </xpath>
+<!--        phone number-->
+        <xpath expr="//t[@t-set='address']" position="inside">
+            <div t-esc="o.partner_id.phone"/>
+        </xpath>
+
+
+    </template>
+</odoo>
